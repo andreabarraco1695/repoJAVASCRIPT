@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LEZIONE JS INTRODUCTION</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myScript.js"></script>
+        <!-- Posso inserire lo script nell'head
+        <script>   
+            function myFunction(){
+                //all'elemento con id "demo" andrò ad applicare tale modifica
+                document.getElementById("demo").innerHTML = "Paragraph changed";
+    
+            }
+
+            function myFunction2(){
+                //all'elemento con id "demo" andrò ad applicare tale modifica
+                document.getElementById("demo").innerHTML = "A paragraph";
+    
+            }
+            
+        </script>
+        -->
+    </head>
+    <body>
+        <!-- Posso inserire lo script anche nel Body
+        
+            <script>   
+            function myFunction(){
+                //all'elemento con id "demo" andrò ad applicare tale modifica
+                document.getElementById("demo").innerHTML = "Paragraph changed";
+    
+            }
+
+            function myFunction2(){
+                //all'elemento con id "demo" andrò ad applicare tale modifica
+                document.getElementById("demo").innerHTML = "A paragraph";
+    
+            }
+            
+        </script>
+
+        -->
+        <h2>Demo JavaScript in Head</h2>
+        <p id="demo">A paragraph</p>
+
+        <!--Creo un button che al click (onclick) richiama la funzione myFunction riportata in head-->
+        <button type="button" onclick="myFunction()">Try it</button>
+        <button type="button" onclick="myFunction2()">Reset</button>
+    </body>
+</html>

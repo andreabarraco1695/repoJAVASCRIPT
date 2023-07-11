@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LEZIONE 2 - VARIABILI</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            let nome_utente; // Dichiarazione di variabile in javascript, le variabili sono caseSensitive
+            let Nome = 'Edoardo'; //Dichiarazione e inizializzazione della variabile in javascript
+            //let viene utilizzando per dichiarare variabili, prima veniva utilizzato "var"
+
+            console.log(Nome);
+
+            //Aggiornare una variabile//
+
+            //let Nome ='luca'; //Sbagliato, cosi non aggiorno la variabile
+            Nome = 'luca'; //Corretto
+            
+            console.log(Nome);
+
+            let classequarta = ['Luca', 'Edoardo', 'Gino']; //Collezione di dati -> Array
+            console.log(classequarta);
+            console.log(classequarta[0]);
+
+            /*Dichiarazione di un oggetto*/
+
+            let persona = {
+                nome: 'Andrea',
+                cognome: 'Barraco',
+                CF: 'BRRNDR95A16G273A',
+                cittaNascita: 'Palermo',
+                eta: 28,
+                coloriPreferiti: ['blue', 'nero', 'grigio'],
+                maggiorenne: true
+            };
+
+            console.log(persona);
+            console.log(persona.cognome);
+
+            console.log(typeof persona.maggiorenne);
+
+            const personaConst = 'Gino'; //Dichiarazione e inizializzazione di una costante
+            personaConst = 'Miao'; //Errore, le costanti non possono essere aggiornata
+       </script>
+    </body>
+</html>
