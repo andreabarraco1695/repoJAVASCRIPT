@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <script>
+            let citta=['Milano', 'Torino', 'Venezia', 'Napoli', 'Palermo'];
+            
+            for (i=0; i<citta.length; i++){
+                console.log(citta[i]);
+            }
+
+            //Da stringa a array
+
+            let cittastringa = 'Milano,Roma,Torino,Venezia,Napoli';
+            let cittaarray = cittastringa.split(',');
+
+            console.log(cittaarray);
+
+            //Da array a stringa
+
+            let cittastringa2 = citta.join('-');
+            console.log(cittastringa2);
+
+            //Aggiungere elemento a un array in fondo
+
+            cittaarray.push('Firenze');
+            console.log(cittaarray);
+
+            //Rimuovere elemento a un array in testa
+
+            cittaarray.shift();
+            console.log(cittaarray);
+            
+        </script>
+    </body>
+</html>

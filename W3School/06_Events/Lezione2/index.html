@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lezione 2 EVENTI</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <div id="divform">
+                <div>
+                    <label for="fname">Nome: <br></label>
+                    <input id="fname" type="text">
+                </div>
+                <br>
+                <div>
+                    <label for="lname">Cognome: <br></label>
+                    <input id="lname" type="text">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Invia">
+                </div>
+            </div>
+        </form>    
+
+        <script>
+            const form = document.querySelector('form');
+            const nome = document.getElementById("fname");
+            const cognome = document.getElementById("lname");
+            const divform = document.getElementById("divform");
+
+            form.onsubmit = function(e){
+                if (nome.value === '' || cognome.value === ''){
+                    e.preventDefault();
+                    window.alert('Devi inserire entrambi i campi');
+                }
+                else{
+                    window.alert('Hai inserito entrambi i campi');
+                }
+            }
+
+            nome.addEventListener('focus', function(e){
+                console.log('Sono in focus su nome con listener');
+            })
+
+        </script>
+    </body>
+</html>
